@@ -1,9 +1,66 @@
+
+/*Common app properties*/
 .App
 {
-  perspective: 1px;
-  transform-style: preserve-3d;
-  height: 100%;
-  width: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  padding-top: 5em;
+  padding-bottom: 3em;
+}
+
+.App > .Title,.App   > .SubTitle
+{
+  font-family: 'TitleFont';
+  text-align: center;
+}
+
+.Copyright
+{
+  font-family: "CopyrightFont";
+  font-size: 0.75em;
+  text-align: center;
+  margin-top: 10em;
+  margin-bottom: 5em;
+}
+
+.Copyright a
+{
+  font-family: "CopyrightFont";
+}
+
+/*Desktop*/
+@media screen and (min-width:1024px)
+{
+  
+  .App
+  {
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+  }
+  
+  .App  > .Title
+  {
+    font-size: 64pt;      
+  }
+
+  .App  > .SubTitle
+  {
+    font-size: 24pt;      
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width:1024px)
+{
+  .App  > .Title
+  {
+    font-size: 24pt;      
+  }
+
+  .App  > .SubTitle
+  {
+    font-size: 16pt;      
+  }
 }

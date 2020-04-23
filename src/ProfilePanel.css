@@ -1,0 +1,160 @@
+.Profile
+{
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(37, 37, 51, 0.9);
+}
+.Profile .Title,.Profile header
+{
+    font-family: 'TitleFont';
+}
+
+.Profile header
+{
+    font-weight: bold;
+}
+
+.Profile .LinkList
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.Profile a.LinkIcon
+{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;    
+}
+
+.Profile a.LinkIcon > img
+{
+    width: 14px;
+    margin-right: 0.3em;
+    align-self:center;
+}
+
+.Profile .LinkSeperator
+{
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: gray;
+    width: 1px;
+    align-self: stretch;
+}
+
+.Profile .Disclaimer
+{
+    font-family: "DisclaimerFont";
+    margin-top: 2em;
+}
+
+
+/*Desktop*/
+@media screen and (min-width:1024px)
+{
+    .Profile
+    {
+        width: 70%;
+        min-width: 1024px;
+        min-height: 30em;    
+    }
+
+    .Profile .Spaced
+    {
+        margin: 1em;
+    }
+
+    .Profile .Columns
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .Profile .CenteredCrossAxis
+    {
+        align-items: center;
+    }
+
+    .Profile .CenteredSameAxis
+    {
+        justify-content: center;
+    }
+
+    .Profile img
+    {
+        max-width:40%;
+    }
+
+    .Profile .Rows
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Profile .Seperator
+    {
+        margin-left: 0.75em;
+        margin-right: 0.75em;
+        background-color: gray;
+        width: 1px;
+        align-self: stretch;
+    }
+
+    .Profile .Title
+    {
+        font-size: 18pt;
+    }
+
+    .Profile .SubTitle
+    {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width:1024px)
+{
+    .Profile
+    {
+        margin-top: 3em;
+        width: 90%;
+        min-height: 20em;
+    }
+
+    .Profile > .Rows
+    {
+        padding: 1em;
+        text-align: center;
+    }
+
+    .Profile ul,.Profile ol
+    {
+        text-align: left;
+    }
+
+    .Profile img
+    {
+        max-width:80%;
+        margin: 0.5em;
+    }
+
+    .Profile .Title
+    {
+        font-size: 16pt;
+    }
+
+    .Profile .SubTitle
+    {
+        font-size: 1em;
+    }
+
+    .Profile .LinkList
+    {
+        justify-content: center;
+    }    
+}

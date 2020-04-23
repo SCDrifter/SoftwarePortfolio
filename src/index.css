@@ -1,50 +1,122 @@
+
 @font-face
 {
-  font-family: 'Open Sans-Regular';
+  font-family: "Raleway";
+  src: url('Raleway-Thin.ttf');
+}
+
+@font-face
+{
+  font-family: 'TitleFont';
   src: url('OpenSans-Regular.ttf');
 }
 
-html 
+
+
+@font-face
 {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  font-family: 'CopyrightFont';
+  src: url('OpenSans-Italic.ttf');
+}
+
+@font-face
+{
+  font-family: 'DisclaimerFont';
+  src: url("Raleway-LightItalic.ttf");
 }
 
 body 
 {
-  font-family: 'Open Sans-Regular';
+  font-family: 'Raleway';
+  font-size: 12pt;
   margin: 0;
   padding: 0;
   color:white;
-  /*background-color: #222f61;*/
+  background-color: #202b61;
 }
 
-.Background
+.Debug
 {
-  position: absolute;
-  top:0;
-  height: 100%;
-  width: 4175px;
-  z-index: -1;
-  background-image: url("Toronto_Night.jpg");
-  background-attachment: fixed;
-  background-size: auto 100%;
-  animation-fill-mode: both;
-  animation-name: body-background-animation;
-  animation-timing-function:linear;
-  animation-direction:alternate;
-  animation-iteration-count: infinite;
-  animation-duration: 90s;
+  background-color: red;
 }
 
-@keyframes body-background-animation
+.CenterText
 {
-  0% {background-position: 40%;}
-  25% {background-position: 50%}
-  50% {background-position: 30%}
-  75% {background-position: 60%}
-  100% {background-position: 40%}
+  text-align: center;
+}
+
+a
+{
+  font-family: 'TitleFont';
+  text-decoration: none;
+  color: rgb(111, 197, 226)
+}
+
+a:hover
+{
+  text-decoration:underline;
+}
+
+a:visited
+{
+  color: rgb(111, 197, 226)
+}
+
+@media screen and (max-width:1024px)
+{
+  body
+  {
+    background-image: url("Background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+  }
+  .Background
+  {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1024px)
+{ 
+  html 
+  {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body 
+  {
+    color:white;
+    /*background-color: #222f61;*/
+  }
+
+  .Background
+  {
+    position: absolute;
+    top:0;
+    height: 100%;
+    min-height: 512px;
+    width: 4175px;
+    z-index: -1;
+    background-image: url("Background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    animation-fill-mode: both;
+    animation-name: body-background-animation;
+    animation-timing-function:linear;
+    /*animation-timing-function:cubic-bezier();*/
+    animation-iteration-count: infinite;
+    animation-duration: 90s;
+  }
+
+  @keyframes body-background-animation
+  {
+    0% {background-position: 40%;}
+    50% {background-position: 60%}
+    100% {background-position: 40%;}
+  }
 }
