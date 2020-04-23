@@ -1,4 +1,5 @@
 import RobotImg from './Robot.jpeg'
+import SelfImg from "./Self.png"
 
 var Profiles = [
     {
@@ -26,11 +27,26 @@ var Profiles = [
                     "The device performs other tasks when not in operation",
         Tech:[
             "C++",
-            "Python(Used for Web UI)"
+            "Python(Used for Web UI)",
+            "HTML"
         ],
         Disclaimer: "To protect my privacy, the source code for this project will only be given upon request.",
         MoreInfo: "https://deadmeatsprojectbox.blogspot.com/2019/10/the-robot.html"
+    },
+    {
+        Title:"Personal Portfolio",
+        Type:"Website",
+        Image: SelfImg,
+        Description:"This website was created using ReactJS to demonstrate my skills and as a means of learning React.js."+
+                    "It is also compatible with mobile devices.",
+        Tech: [
+            "Javascript",
+            "HTML",
+            "ReactJS"
+        ],
+        SourceCode:"https://github.com/SCDrifter/SoftwarePortfolio"        
     }
+
 ];
 
 export default Profiles;

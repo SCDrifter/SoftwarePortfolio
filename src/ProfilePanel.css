@@ -59,7 +59,8 @@
     {
         width: 70%;
         min-width: 1024px;
-        min-height: 30em;    
+        min-height: 25em;    
+        padding: 0.5em;
     }
 
     .Profile .Spaced
